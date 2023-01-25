@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+}
+
 .App {
   background-color: #282c34;
   text-align: center;
@@ -8,7 +12,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  }
+}
 
 .App-logo {
   height: 40vmin;
@@ -30,6 +34,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }

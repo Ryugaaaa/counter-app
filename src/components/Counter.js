@@ -1,10 +1,10 @@
 import { useState } from "react";
 
-const Counter = () => {
-  const [number, setNumber] = useState(0);
+const Counter = ({ initialValue, step }) => {
+  const [number, setNumber] = useState(initialValue);
 
   function increase() {
-    setNumber(number + 1);
+    setNumber(number + step);
   }
 
   function decrease() {
@@ -19,7 +19,7 @@ const Counter = () => {
     }
   }
 
-  console.log("number", number);
+  // console.log("number", number);
 
   return (
     <div>
